@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
             String name = editname.getText().toString();
                 dref.child("Name").push().setValue(name);
+
                 Toast.makeText(getApplicationContext(),name, Toast.LENGTH_LONG).show();
             }
         });
